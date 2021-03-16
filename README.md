@@ -8,7 +8,7 @@ Puzzle party play game, where the objective would be to cooperate to complete ce
 ## Scope & Progress
 
 1. ~~Brainstorm - **1 day**~~
-2. ~~Game Objectives & Mechanics - **1 day**~~
+2. Game Objectives & Mechanics - **1 day**
 3. MVP - **20 days**
 4. Art Style & Environment - **2 days**
 5. Vertical Slice - **15 days**

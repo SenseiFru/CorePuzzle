@@ -15,7 +15,7 @@ Puzzle party play game, where the objective would be to cooperate to complete ce
 6. Alpha & Iteration - **Ongoing**
 
 Expected Completion Time: **30 - 38 days**
-
+Elsaped Time: **3 days**
 
 ### Game Engine & Core Docs
 

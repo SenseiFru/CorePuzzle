@@ -7,8 +7,6 @@ Puzzle party play game, where the objective would be to cooperate to complete ce
 
 ## Scope & Progress
 
-Anticipated 30 - 38 days
-
 1. ~~Brainstorm - **1 day**~~
 2. Game Objectives & Mechanics - **1 day**
 3. MVP - **20 days**
@@ -16,8 +14,7 @@ Anticipated 30 - 38 days
 5. Vertical Slice - **15 days**
 6. Alpha & Iteration - **Ongoing**
 
-
-
+Expected Completion Time: **30 - 38 days**
 
 
 ### Game Engine & Core Docs

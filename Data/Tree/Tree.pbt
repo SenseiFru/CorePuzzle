@@ -25,6 +25,10 @@ Objects {
   ChildIds: 3276301627953100537
   ChildIds: 4052528390027941026
   ChildIds: 8210933481008373150
+  ChildIds: 16119930241008619906
+  ChildIds: 3698259094415541830
+  ChildIds: 2283662904247554344
+  ChildIds: 14709974795454851713
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,6 +41,242 @@ Objects {
     Value: "mc:ecollisionsetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 14709974795454851713
+  Name: "Teleporter"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7211869368397496173
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Teleporter"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 510
+            Y: -285
+            Z: 20
+          }
+        }
+        Overrides {
+          Name: "cs:TeleporterCooldown"
+          Float: 2
+        }
+        Overrides {
+          Name: "cs:DestinationOffset"
+          Vector {
+            Y: 100
+            Z: 10
+          }
+        }
+        Overrides {
+          Name: "cs:Target"
+          ObjectReference {
+            SelfId: 4339398987212170323
+            SubObjectId: 7538773306791274806
+            InstanceId: 2451380301036240386
+            TemplateId: 2748399212073008561
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15189918855055894592
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9763585792075862702
+    }
+  }
+}
+Objects {
+  Id: 2283662904247554344
+  Name: "Advanced Axe"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14979955620717351938
+      value {
+        Overrides {
+          Name: "CooldownDuration"
+          Float: 0.5
+        }
+        Overrides {
+          Name: "RecoveryDuration"
+          Float: 0.3
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18349659105178778687
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Advanced Axe"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1325
+            Y: 320
+            Z: 110
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16285539813787198045
+    }
+  }
+}
+Objects {
+  Id: 3698259094415541830
+  Name: "Advanced 2-Handed Sword"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 668373778692601099
+      value {
+        Overrides {
+          Name: "RecoveryDuration"
+          Float: 3
+        }
+        Overrides {
+          Name: "CooldownDuration"
+          Float: 0.5
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11583163290014738642
+      value {
+        Overrides {
+          Name: "CooldownDuration"
+          Float: 2.8
+        }
+        Overrides {
+          Name: "RecoveryDuration"
+          Float: 3
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13380154364575694248
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Advanced 2-Handed Sword"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 500
+            Y: -285
+            Z: 80
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1420034215416106394
+    }
+  }
+}
+Objects {
+  Id: 16119930241008619906
+  Name: "Ability Display"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1197405803885299036
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Ability Display"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13280367607995188053
+      value {
+        Overrides {
+          Name: "UIX"
+          Float: 2595
+        }
+        Overrides {
+          Name: "UIY"
+          Float: -130
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5746009512360372073
+    }
   }
 }
 Objects {
@@ -231,9 +471,9 @@ Objects {
   Name: "Text 04: 2"
   Transform {
     Location {
-      X: -150
-      Y: -150
-      Z: 250
+      X: -625
+      Y: -2475
+      Z: 1140
     }
     Rotation {
     }
@@ -345,13 +585,26 @@ Objects {
           Name: "Position"
           Vector {
             X: -1100
-            Y: -2350
-            Z: 300
+            Y: -2740
+            Z: 1375
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16690540313774384294
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -250
+            Y: 50
+            Z: -100
           }
         }
       }
@@ -366,9 +619,9 @@ Objects {
   Name: "Text 04: 3"
   Transform {
     Location {
-      X: -150
-      Y: 350
-      Z: 250
+      X: 20
+      Y: -2645
+      Z: 760
     }
     Rotation {
     }

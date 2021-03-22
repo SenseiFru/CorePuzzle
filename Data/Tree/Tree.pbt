@@ -15,7 +15,6 @@ Objects {
     }
   }
   ChildIds: 7367735074338159388
-  ChildIds: 15327197045099462309
   ChildIds: 16813558807825262224
   ChildIds: 14713340454944924967
   ChildIds: 10005074784157121906
@@ -29,6 +28,7 @@ Objects {
   ChildIds: 3698259094415541830
   ChildIds: 2283662904247554344
   ChildIds: 14709974795454851713
+  ChildIds: 4742949997611863674
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -41,6 +41,47 @@ Objects {
     Value: "mc:ecollisionsetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 4742949997611863674
+  Name: "Sequencing"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9963638497728797397
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sequencing"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -550
+            Y: 850
+            Z: 500
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6680419650756002689
+    }
   }
 }
 Objects {
@@ -344,18 +385,15 @@ Objects {
           Name: "Name"
           String: "Game State Display"
         }
-      }
-    }
-    ParameterOverrideMap {
-      key: 13474914646443004031
-      value {
         Overrides {
-          Name: "UIX"
-          Float: 1300
+          Name: "Position"
+          Vector {
+          }
         }
         Overrides {
-          Name: "UIY"
-          Float: -955
+          Name: "Rotation"
+          Rotator {
+          }
         }
       }
     }
@@ -1319,72 +1357,6 @@ Objects {
   PlayerSpawnPoint {
     TeamInt: 1
     PlayerScaleMultiplier: 1
-  }
-}
-Objects {
-  Id: 15327197045099462309
-  Name: "UI Text Box"
-  Transform {
-    Location {
-      X: 2000
-      Y: -200
-    }
-    Rotation {
-      Yaw: 100.000008
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "Text"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 20
-      Justification {
-        Value: "mc:etextjustify:left"
-      }
-      AutoWrapText: true
-      Font {
-        Id: 841534158063459245
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
   }
 }
 Objects {

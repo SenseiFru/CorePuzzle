@@ -110,4 +110,5 @@ function API.SetTimeRemainingInState(remainingTime)
 	_G.APIBasicGameState.stateTimeSetter(remainingTime)
 end
 
-return API
+
+return API, print(remainingTime)

@@ -73,6 +73,7 @@ function SetGameState(newState)
 	elseif newState == ABGS.GAME_STATE_ROUND then
 		stateHasduration = ROUND_HAS_DURATION
 		stateDuration = ROUND_DURATION
+    print(stateDuration)
 	elseif newState == ABGS.GAME_STATE_ROUND_END then
 		stateHasduration = ROUND_END_HAS_DURATION
 		stateDuration = ROUND_END_DURATION
@@ -83,6 +84,7 @@ function SetGameState(newState)
 	local stateEndTime = 0.0
 	if stateHasduration then
 		stateEndTime = time() + stateDuration
+    print(stateEndTime)
 	end
 
 	local oldState = GetGameState()
@@ -109,11 +111,11 @@ end
 function SetTimeRemainingInState(remainingTime)
 	local stateEndTime = time() + remainingTime
 	local currentState = GetGameState()
-
+  
 	-- We broadcast the event because the time changed, even though we are still in the same state
 	Events.Broadcast("GameStateChanged", currentState, currentState, true, stateEndTime)
 	Events.BroadcastToAllPlayers("GameStateChanged", currentState, currentState, true, stateEndTime)
-
+  
 	script:SetNetworkedCustomProperty("StateHasDuration", true)
 	script:SetNetworkedCustomProperty("StateEndTime", stateEndTime)
 end
@@ -131,7 +133,7 @@ function Tick(deltaTime)
 		elseif previousState == ABGS.GAME_STATE_ROUND_END then
 			nextState = ABGS.GAME_STATE_LOBBY
 		end
-
+    
 		SetGameState(nextState)
 	end
 end

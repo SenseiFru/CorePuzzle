@@ -1,6 +1,6 @@
 Assets {
-  Id: 16989774870797516391
-  Name: "NewScript"
+  Id: 785076892868611730
+  Name: "Rewards"
   PlatformAssetType: 3
   TextAsset {
   }

@@ -15,22 +15,17 @@ Objects {
     }
   }
   ChildIds: 7367735074338159388
-  ChildIds: 15327197045099462309
   ChildIds: 16813558807825262224
   ChildIds: 14713340454944924967
   ChildIds: 10005074784157121906
   ChildIds: 14982843161775482339
-  ChildIds: 7847620942862325988
   ChildIds: 2145997815551559275
   ChildIds: 3276301627953100537
   ChildIds: 4052528390027941026
   ChildIds: 8210933481008373150
-  ChildIds: 16119930241008619906
-  ChildIds: 3698259094415541830
-  ChildIds: 2283662904247554344
-  ChildIds: 14709974795454851713
   ChildIds: 11729576941211495382
   ChildIds: 3909389324754720213
+  ChildIds: 4113288188779864135
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -43,6 +38,50 @@ Objects {
     Value: "mc:ecollisionsetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 4113288188779864135
+  Name: "PlatformManager"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Platform"
+      AssetReference {
+        Id: 105380709822956911
+      }
+    }
+    Overrides {
+      Name: "cs:WorldText"
+      AssetReference {
+        Id: 13927327269007608737
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15326530014651911577
+    }
   }
 }
 Objects {
@@ -253,242 +292,6 @@ Objects {
   }
 }
 Objects {
-  Id: 14709974795454851713
-  Name: "Teleporter"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7211869368397496173
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Teleporter"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 510
-            Y: -285
-            Z: 20
-          }
-        }
-        Overrides {
-          Name: "cs:TeleporterCooldown"
-          Float: 2
-        }
-        Overrides {
-          Name: "cs:DestinationOffset"
-          Vector {
-            Y: 100
-            Z: 10
-          }
-        }
-        Overrides {
-          Name: "cs:Target"
-          ObjectReference {
-            SelfId: 4339398987212170323
-            SubObjectId: 7538773306791274806
-            InstanceId: 2451380301036240386
-            TemplateId: 2748399212073008561
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 15189918855055894592
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9763585792075862702
-    }
-  }
-}
-Objects {
-  Id: 2283662904247554344
-  Name: "Advanced Axe"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 14979955620717351938
-      value {
-        Overrides {
-          Name: "CooldownDuration"
-          Float: 0.5
-        }
-        Overrides {
-          Name: "RecoveryDuration"
-          Float: 0.3
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 18349659105178778687
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Advanced Axe"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1325
-            Y: 320
-            Z: 110
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 16285539813787198045
-    }
-  }
-}
-Objects {
-  Id: 3698259094415541830
-  Name: "Advanced 2-Handed Sword"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 668373778692601099
-      value {
-        Overrides {
-          Name: "RecoveryDuration"
-          Float: 3
-        }
-        Overrides {
-          Name: "CooldownDuration"
-          Float: 0.5
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11583163290014738642
-      value {
-        Overrides {
-          Name: "CooldownDuration"
-          Float: 2.8
-        }
-        Overrides {
-          Name: "RecoveryDuration"
-          Float: 3
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 13380154364575694248
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Advanced 2-Handed Sword"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 500
-            Y: -285
-            Z: 80
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1420034215416106394
-    }
-  }
-}
-Objects {
-  Id: 16119930241008619906
-  Name: "Ability Display"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1197405803885299036
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Ability Display"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 13280367607995188053
-      value {
-        Overrides {
-          Name: "UIX"
-          Float: 2595
-        }
-        Overrides {
-          Name: "UIY"
-          Float: -130
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 5746009512360372073
-    }
-  }
-}
-Objects {
   Id: 8210933481008373150
   Name: "Lobby Required Players"
   Transform {
@@ -640,276 +443,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "BossSpawning"
-  }
-}
-Objects {
-  Id: 7847620942862325988
-  Name: "Platform"
-  Transform {
-    Location {
-      Y: 1200
-      Z: -50
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 3427732422765507484
-  ChildIds: 2451380301036240386
-  ChildIds: 14466098734538284573
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 14466098734538284573
-  Name: "Text 04: 2"
-  Transform {
-    Location {
-      X: -625
-      Y: -2475
-      Z: 1140
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7847620942862325988
-  ChildIds: 16272893473620651468
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15078356820435901387
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableCastShadows: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 16272893473620651468
-  Name: "Platform2"
-  Transform {
-    Location {
-      X: -250
-      Y: 50
-      Z: -200
-    }
-    Rotation {
-    }
-    Scale {
-      X: 24.75
-      Y: 10.75
-      Z: 2.5
-    }
-  }
-  ParentId: 14466098734538284573
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11541832347663523650
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableCastShadows: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 2451380301036240386
-  Name: "Plat1"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7847620942862325988
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7538773306791274806
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Plat1"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1100
-            Y: -2740
-            Z: 1375
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 16690540313774384294
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -250
-            Y: 50
-            Z: -100
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2748399212073008561
-    }
-  }
-}
-Objects {
-  Id: 3427732422765507484
-  Name: "Text 04: 3"
-  Transform {
-    Location {
-      X: 20
-      Y: -2645
-      Z: 760
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7847620942862325988
-  ChildIds: 7870454958156614563
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2132488922986239825
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableCastShadows: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 7870454958156614563
-  Name: "Platform3"
-  Transform {
-    Location {
-      X: -250
-      Y: 50
-      Z: -150
-    }
-    Rotation {
-    }
-    Scale {
-      X: 24.75
-      Y: 10.75
-      Z: 2.5
-    }
-  }
-  ParentId: 3427732422765507484
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11541832347663523650
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableCastShadows: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
   }
 }
 Objects {
@@ -1528,72 +1061,6 @@ Objects {
   PlayerSpawnPoint {
     TeamInt: 1
     PlayerScaleMultiplier: 1
-  }
-}
-Objects {
-  Id: 15327197045099462309
-  Name: "UI Text Box"
-  Transform {
-    Location {
-      X: 2000
-      Y: -200
-    }
-    Rotation {
-      Yaw: 100.000008
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "Text"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 20
-      Justification {
-        Value: "mc:etextjustify:left"
-      }
-      AutoWrapText: true
-      Font {
-        Id: 841534158063459245
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
   }
 }
 Objects {

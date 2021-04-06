@@ -170,7 +170,7 @@ Objects {
       Z: 1650
     }
     Rotation {
-      Yaw: -30.0000095
+      Yaw: -30
     }
     Scale {
       X: 16
@@ -329,7 +329,7 @@ Objects {
       Z: 1650
     }
     Rotation {
-      Yaw: -30.0000057
+      Yaw: -30
     }
     Scale {
       X: 15.5

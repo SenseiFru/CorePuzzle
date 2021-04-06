@@ -19,9 +19,9 @@ Objects {
   ParentId: 2145997815551559275
   UnregisteredParameters {
     Overrides {
-      Name: "cs:BossTest"
+      Name: "cs:BugBoss"
       AssetReference {
-        Id: 15054426804753383122
+        Id: 3627480809742154146
       }
     }
   }

@@ -24,18 +24,15 @@ Objects {
   ChildIds: 8210933481008373150
   ChildIds: 11729576941211495382
   ChildIds: 3909389324754720213
-
   ChildIds: 5986954837632413354
   ChildIds: 2145997815551559275
   ChildIds: 9519107300857253344
-
   ChildIds: 15685840389945500653
   ChildIds: 2170084436098247363
   ChildIds: 16642421570144117876
   ChildIds: 1817248792184426036
   ChildIds: 7212931294493229591
   ChildIds: 18151554466968552963
-
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -45,13 +42,12 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
   }
 }
 Objects {
-
   Id: 18151554466968552963
   Name: "Floating Island"
   Transform {
@@ -148,7 +144,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -344,7 +340,6 @@ Objects {
   }
 }
 Objects {
-
   Id: 9519107300857253344
   Name: "BossHealth"
   Transform {
@@ -367,7 +362,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
   }
@@ -588,7 +583,6 @@ Objects {
 Objects {
   Id: 5986954837632413354
   Name: "Platform"
-
   Transform {
     Location {
     }
@@ -654,7 +648,7 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
   }

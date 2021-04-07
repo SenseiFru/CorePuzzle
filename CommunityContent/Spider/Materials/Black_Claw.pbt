@@ -2,7 +2,7 @@ Assets {
   Id: 11746387664527230206
   Name: "Black_Claw"
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 10184847056121543272
     ParameterOverrides {

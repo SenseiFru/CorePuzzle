@@ -2,7 +2,7 @@ Assets {
   Id: 16134251483274110360
   Name: "Spider"
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 1916791486746958371
     ParameterOverrides {

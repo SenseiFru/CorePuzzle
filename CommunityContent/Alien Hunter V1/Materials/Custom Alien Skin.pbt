@@ -2,7 +2,7 @@ Assets {
   Id: 11539968327702689324
   Name: "Custom Alien Skin"
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 3539674987226724661
     ParameterOverrides {

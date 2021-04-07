@@ -16,7 +16,6 @@ Objects {
   }
   ChildIds: 16677411980883756519
   ChildIds: 7367735074338159388
-  ChildIds: 15327197045099462309
   ChildIds: 16813558807825262224
   ChildIds: 14713340454944924967
   ChildIds: 10005074784157121906
@@ -25,15 +24,18 @@ Objects {
   ChildIds: 8210933481008373150
   ChildIds: 11729576941211495382
   ChildIds: 3909389324754720213
+
   ChildIds: 5986954837632413354
   ChildIds: 2145997815551559275
   ChildIds: 9519107300857253344
+
   ChildIds: 15685840389945500653
   ChildIds: 2170084436098247363
   ChildIds: 16642421570144117876
   ChildIds: 1817248792184426036
   ChildIds: 7212931294493229591
   ChildIds: 18151554466968552963
+
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -49,6 +51,7 @@ Objects {
   }
 }
 Objects {
+
   Id: 18151554466968552963
   Name: "Floating Island"
   Transform {
@@ -341,6 +344,7 @@ Objects {
   }
 }
 Objects {
+
   Id: 9519107300857253344
   Name: "BossHealth"
   Transform {
@@ -584,6 +588,7 @@ Objects {
 Objects {
   Id: 5986954837632413354
   Name: "Platform"
+
   Transform {
     Location {
     }
@@ -596,94 +601,17 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 5493714197299398340
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 5493714197299398340
-  Name: "PlatformSpawner"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5986954837632413354
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Plat0"
+      Name: "cs:Platform"
       AssetReference {
-        Id: 10060081821338854943
+        Id: 105380709822956911
       }
     }
     Overrides {
-      Name: "cs:Plat1"
+      Name: "cs:WorldText"
       AssetReference {
-        Id: 2748399212073008561
-      }
-    }
-    Overrides {
-      Name: "cs:Plat2"
-      AssetReference {
-        Id: 3964736839977601694
-      }
-    }
-    Overrides {
-      Name: "cs:Plat3"
-      AssetReference {
-        Id: 5202122204240395353
-      }
-    }
-    Overrides {
-      Name: "cs:Plat4"
-      AssetReference {
-        Id: 10332111042071222404
-      }
-    }
-    Overrides {
-      Name: "cs:Plat5"
-      AssetReference {
-        Id: 16815763213097117601
-      }
-    }
-    Overrides {
-      Name: "cs:Plat6"
-      AssetReference {
-        Id: 16143687361061872583
-      }
-    }
-    Overrides {
-      Name: "cs:Plat7"
-      AssetReference {
-        Id: 2815693464553066999
-      }
-    }
-    Overrides {
-      Name: "cs:Plat8"
-      AssetReference {
-        Id: 5700361411786279605
-      }
-    }
-    Overrides {
-      Name: "cs:Plat9"
-      AssetReference {
-        Id: 10344535396568852226
+        Id: 13927327269007608737
       }
     }
   }
@@ -698,7 +626,7 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 9982607495528827915
+      Id: 15326530014651911577
     }
   }
 }
@@ -1604,72 +1532,6 @@ Objects {
   PlayerSpawnPoint {
     TeamInt: 1
     PlayerScaleMultiplier: 1
-  }
-}
-Objects {
-  Id: 15327197045099462309
-  Name: "UI Text Box"
-  Transform {
-    Location {
-      X: 2000
-      Y: -200
-    }
-    Rotation {
-      Yaw: 100.000008
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "Text"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 20
-      Justification {
-        Value: "mc:etextjustify:left"
-      }
-      AutoWrapText: true
-      Font {
-        Id: 841534158063459245
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
   }
 }
 Objects {

@@ -1,6 +1,59 @@
 Name: "Floating Island"
 RootId: 18151554466968552963
 Objects {
+  Id: 4000842447055957016
+  Name: "Rock 01"
+  Transform {
+    Location {
+      X: -3914.29297
+      Y: 8901.41504
+      Z: -3006.98926
+    }
+    Rotation {
+      Roll: -169.999908
+    }
+    Scale {
+      X: 4.50000095
+      Y: 5.25
+      Z: 2.75
+    }
+  }
+  ParentId: 18151554466968552963
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11171733653586004707
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18302154991031027573
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableCastShadows: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 8648943601978807843
   Name: "Rock 01"
   Transform {

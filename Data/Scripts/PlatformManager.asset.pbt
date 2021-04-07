@@ -1,6 +1,6 @@
 Assets {
-  Id: 9982607495528827915
-  Name: "PlatformSpawner"
+  Id: 15326530014651911577
+  Name: "PlatformManager"
   PlatformAssetType: 3
   TextAsset {
   }

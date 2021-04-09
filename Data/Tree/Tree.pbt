@@ -33,6 +33,8 @@ Objects {
   ChildIds: 1817248792184426036
   ChildIds: 7212931294493229591
   ChildIds: 18151554466968552963
+  ChildIds: 2050642646770484992
+  ChildIds: 8521175463724574222
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -45,6 +47,68 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 8521175463724574222
+  Name: "BossEliminationLobby"
+  Transform {
+    Location {
+      X: 67647.1875
+      Z: 3192.79688
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "BossEliminationLobby"
+  }
+}
+Objects {
+  Id: 2050642646770484992
+  Name: "MainMenuLobby"
+  Transform {
+    Location {
+      X: 40084.9688
+      Z: 32065.4199
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "MainMenuLobby"
   }
 }
 Objects {
@@ -1498,9 +1562,8 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -2150
-      Y: 300
-      Z: 3400
+      X: -1839.43945
+      Z: 3201.33984
     }
     Rotation {
       Yaw: -75

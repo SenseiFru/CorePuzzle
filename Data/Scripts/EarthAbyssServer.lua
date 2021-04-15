@@ -1,4 +1,3 @@
-
 function OnPlayerInputData(player, data)
 
 
@@ -10,4 +9,4 @@ function OnPlayerInputData(player, data)
 end
 
 
-Events.ConnectForPlayer("spiralPortPosition", OnPlayerInputData)
+Events.ConnectForPlayer("randomiseEarthPosition", OnPlayerInputData)

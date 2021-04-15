@@ -373,38 +373,6 @@ Objects {
   }
 }
 Objects {
-  Id: 8457343089769416368
-  Name: "Spiral"
-  Transform {
-    Location {
-      X: 4250
-      Y: 3600
-      Z: 2900
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2170084436098247363
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Spiral"
-  }
-}
-Objects {
   Id: 15845471841369012642
   Name: "SpiralL"
   Transform {

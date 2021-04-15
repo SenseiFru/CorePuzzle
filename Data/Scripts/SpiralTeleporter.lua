@@ -1,29 +1,22 @@
-local propSpiralEntrance = script:GetCustomProperty("SpiralEntrance"):WaitForObject()
-local player = Game:GetLocalPlayer()
-
-local tpPos = Vector3.New (0,0,10)
-
-
-function playerTP (trigger, object)
+local propTriggerEntrance = script:GetCustomProperty("Trigger"):WaitForObject()
+local propSpiralEntrancePos = script:GetCustomProperty("SpiralEntrancePos")
 
 
 
+function playerTP (propTriggerEntrance, object)
 
-local playerPos = player:GetWorldPosition()
+if object:IsA("Player") then
 
 
 
-if object ~= nil and object:IsA("Player") then
+local spiralPortPos =  propSpiralEntrancePos
 
-print("hittheportal")
 
-Events.BroadcastToServer("portalPosition", tpPos)
-
-trigger:Destroy()
+Events.BroadcastToServer("spiralPortPosition", spiralPortPos)
 
 
 end
 end
 
 
-playerTP()
+propTriggerEntrance.beginOverlapEvent:Connect(playerTP)

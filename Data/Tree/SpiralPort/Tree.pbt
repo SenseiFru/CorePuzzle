@@ -1,10 +1,13 @@
-Name: "Spiral"
+Name: "SpiralPort"
 RootId: 8457343089769416368
 Objects {
-  Id: 4428976790098345299
-  Name: "SpiralClientContext"
+  Id: 1747313510657750465
+  Name: "SpiralEntrance"
   Transform {
     Location {
+      X: -2880.58301
+      Y: -4231.65332
+      Z: -3105.36963
     }
     Rotation {
     }
@@ -15,22 +18,55 @@ Objects {
     }
   }
   ParentId: 8457343089769416368
-  ChildIds: 11471739625536344039
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  NetworkContext {
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "SpiralEntrance"
   }
 }
 Objects {
-  Id: 11471739625536344039
-  Name: "SpiralTeleporter"
+  Id: 16642421570144117876
+  Name: "SpiralServerContext"
+  Transform {
+    Location {
+      X: 1700
+      Y: -500
+      Z: -3050
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8457343089769416368
+  ChildIds: 14242564072076269328
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: Server
+  }
+}
+Objects {
+  Id: 14242564072076269328
+  Name: "SpiralUse"
   Transform {
     Location {
     }
@@ -42,15 +78,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4428976790098345299
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:SpiralEntrance"
-      ObjectReference {
-        SelfId: 841534158063459245
-      }
-    }
-  }
+  ParentId: 16642421570144117876
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -62,7 +90,7 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 4723952745960314755
+      Id: 5322563342798030569
     }
   }
 }

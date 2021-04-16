@@ -25,3 +25,12 @@ Assets {
     AssetId: "CORESKY_Sky"
   }
 }
+Assets {
+  Id: 2151389631886067932
+  Name: "Baloo 2 Extra Bold"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "Baloo2ExtraBold_ref"
+  }
+}

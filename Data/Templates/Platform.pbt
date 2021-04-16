@@ -16,7 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 5343393885002674165
+        ChildIds: 2531404538764278664
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -40,7 +40,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 7140586300554977497
+            Id: 8553692501380719773
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -55,41 +55,24 @@ Assets {
         }
       }
       Objects {
-        Id: 5343393885002674165
-        Name: "Resurrection VFX"
+        Id: 2531404538764278664
+        Name: "World Text"
         Transform {
           Location {
-            Z: 22
+            X: -202
+            Y: -225.998947
+            Z: 146
           }
           Rotation {
+            Yaw: -179
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 5
+            Y: 5
+            Z: 5
           }
         }
         ParentId: 1140213355294406705
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 20
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 6.32939529
-          }
-          Overrides {
-            Name: "bp:Color"
-            Color {
-              R: 0.149999976
-              G: 0.290728211
-              B: 1
-              A: 1
-            }
-          }
-        }
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -99,37 +82,43 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
-        Blueprint {
-          BlueprintAsset {
-            Id: 15642785876334493462
+        Text {
+          FontAsset {
+            Id: 2151389631886067932
           }
-          TeamSettings {
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
           }
-          Vfx {
-            AutoPlay: true
+          HorizontalSize: 1
+          VerticalSize: 1
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:left"
           }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:medium"
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
         }
       }
     }
     Assets {
-      Id: 7140586300554977497
-      Name: "Container - Hex- Rounded"
+      Id: 8553692501380719773
+      Name: "Urban Damaged Concrete Chunk 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_container_hex_rnd_001_ref"
+        AssetId: "sm_ts_urb_dest_concrete_chunk_002_ref"
       }
     }
     Assets {
-      Id: 15642785876334493462
-      Name: "Resurrection VFX"
-      PlatformAssetType: 8
+      Id: 2151389631886067932
+      Name: "Baloo 2 Extra Bold"
+      PlatformAssetType: 28
       PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_resurrection"
+        AssetType: "FontAssetRef"
+        AssetId: "Baloo2ExtraBold_ref"
       }
     }
     PrimaryAssetId {

@@ -23,6 +23,7 @@ Objects {
   ChildIds: 8210933481008373150
   ChildIds: 11729576941211495382
   ChildIds: 3909389324754720213
+  ChildIds: 9054291611968169705
   ChildIds: 5986954837632413354
   ChildIds: 2145997815551559275
   ChildIds: 9519107300857253344
@@ -414,9 +415,12 @@ Objects {
 }
 Objects {
   Id: 5986954837632413354
-  Name: "Platform"
+  Name: "Platforms"
   Transform {
     Location {
+      X: -1521
+      Y: 695
+      Z: 1526
     }
     Rotation {
     }
@@ -435,12 +439,45 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:WorldText"
-      AssetReference {
-        Id: 13927327269007608737
+      Name: "cs:platformSpawnAmount"
+      Int: 7
+    }
+    Overrides {
+      Name: "cs:platformSpawnDelay"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:spawnLocation"
+      Vector {
+        X: 2300
+        Y: 2300
+        Z: 150
+      }
+    }
+    Overrides {
+      Name: "cs:isRandomHeight"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:baseHeight"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:activePlatforms"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:despawnTimer"
+      Float: 20
+    }
+    Overrides {
+      Name: "cs:SequenceTxt"
+      ObjectReference {
+        SelfId: 13715500039371947278
       }
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -453,6 +490,130 @@ Objects {
   Script {
     ScriptAsset {
       Id: 15326530014651911577
+    }
+  }
+}
+Objects {
+  Id: 9054291611968169705
+  Name: "Sequence"
+  Transform {
+    Location {
+      X: -4466
+      Y: -3930
+      Z: 4070
+    }
+    Rotation {
+      Yaw: -113.999977
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 13715500039371947278
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+      ContentType {
+        Value: "mc:ecanvascontenttype:dynamic"
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13715500039371947278
+  Name: "SequenceTxt"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -2.73207552e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9054291611968169705
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Control {
+    Width: 462
+    Height: 60
+    UIX: 1031
+    UIY: 707
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 30
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      Font {
+        Id: 2151389631886067932
+      }
+      VerticalJustification {
+        Value: "mc:everticaljustification:center"
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
     }
   }
 }

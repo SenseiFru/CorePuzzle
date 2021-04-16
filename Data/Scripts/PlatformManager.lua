@@ -1,48 +1,48 @@
 local propPlatform = script:GetCustomProperty("Platform")
-local propWorldText = script:GetCustomProperty("WorldText")
+local propPlatformSpawnAmount = script:GetCustomProperty("platformSpawnAmount")
+local propPlatformSpawnDelay = script:GetCustomProperty("platformSpawnDelay")
+local propSpawnLocation = script:GetCustomProperty("spawnLocation")
+local propIsRandomHeight = script:GetCustomProperty("isRandomHeight")
+local propBaseHeight = script:GetCustomProperty("baseHeight")
+local propActivePlatforms = script:GetCustomProperty("activePlatforms")
+local propSequenceTxt = script:GetCustomProperty("sequenceTxt"):WaitForObject()
+local propDespawnTimer = script:GetCustomProperty("despawnTimer")
 
--- generate random number required for spawning platforms
-function randMapLocation()
-    return math.random(-2300, 2300)
-end
-
-local platformNumber = 0
-
-while true do
-    -- spawn 3*3
-    for _ = 1, 3 do
-        -- spawn 3 times in random location
-        for _ = 1, 3 do
-            platformNumber = platformNumber + 1
-            local platform =
-                World.SpawnAsset(
-                propPlatform,
-                {parent = script, position = Vector3.New(randMapLocation(), randMapLocation(), math.random(100, 600))}
-            )
-
-            local platformText =
-                World.SpawnAsset(
-                propWorldText,
-                {
-                    parent = platform,
-                    position = Vector3.New(173, -355, 273),
-                    rotation = Rotation.New(0, 0, -90),
-                    scale = Vector3.New(6, 6, 6)
-                }
-            )
-
-            -- world text management
-            platformText.text = "Platform " .. platformNumber
-        end
-        Task.Wait(3)
-        local test = script:FindDescendantsByName("Platform")
-        for _ in ipairs(test) do
-            test[_]:Destroy()
-        end
-    end
-
-    -- reset platform numbers | required or continues counting
-    if platformNumber >= 9 then
-        platformNumber = 0
+function SpawnLocation()
+    if propIsRandomHeight then
+        return Vector3.New(
+            math.random(propSpawnLocation.x),
+            math.random(propSpawnLocation.y),
+            math.random(propBaseHeight, propSpawnLocation.z)
+        )
+    else
+        return Vector3.New(
+            math.random(propSpawnLocation.y),
+            math.random(propSpawnLocation.y),
+            propSpawnLocation.z)
     end
 end
+
+function SpawnPlatforms()
+    for currentPlatform = 1, propPlatformSpawnAmount do
+        platform =
+        World.SpawnAsset(
+            propPlatform,
+            {
+                parent = script,
+                position = SpawnLocation()
+            }
+        )
+        if currentPlatform <= propActivePlatforms then
+            generateNumber = CoreMath.Round(math.random(1, propPlatformSpawnAmount))
+            table.unpack(platform:GetChildren()).text = "" .. generateNumber
+            propSequenceTxt.text = string.sub(propSequenceTxt.text .. "   |   " .. generateNumber, 3)
+        end
+        Task.Wait(propPlatformSpawnDelay)
+    end
+    Task.Wait(propDespawnTimer)
+    -- destroy platforms
+    table.unpack(World.FindObjectsByName("Platform")):Destroy()
+end
+
+SpawnPlatforms()

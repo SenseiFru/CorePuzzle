@@ -1,6 +1,122 @@
 Name: "BossEliminationLobby"
 RootId: 8521175463724574222
 Objects {
+  Id: 8230442352569518449
+  Name: "BeLobbyPort"
+  Transform {
+    Location {
+      X: 530.507813
+      Y: 441.241699
+      Z: 707.651611
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8521175463724574222
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "BeLobbyPort"
+  }
+}
+Objects {
+  Id: 15850822559425675141
+  Name: "Instructions"
+  Transform {
+    Location {
+      X: -5763.20703
+      Y: 4812.7915
+      Z: 3113.17334
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8521175463724574222
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Instructions"
+  }
+}
+Objects {
+  Id: 14760949208011565824
+  Name: "Pipe"
+  Transform {
+    Location {
+      X: -128.117188
+      Y: 10.1560059
+      Z: 1068.31152
+    }
+    Rotation {
+    }
+    Scale {
+      X: 205.275848
+      Y: 190.02626
+      Z: 19.0040035
+    }
+  }
+  ParentId: 8521175463724574222
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3353962237997435073
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4854270377050611262
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableCastShadows: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
   Id: 2106629555382070828
   Name: "Pipe - Half Thin"
   Transform {

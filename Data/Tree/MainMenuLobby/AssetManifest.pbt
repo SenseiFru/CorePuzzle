@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11276246478500445170
+  Name: "Amarante"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "AmaranteRegular_ref"
+  }
+}
+Assets {
   Id: 6895100481165381713
   Name: "Roof Metal 01"
   PlatformAssetType: 2

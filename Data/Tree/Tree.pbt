@@ -27,10 +27,10 @@ Objects {
   ChildIds: 5986954837632413354
   ChildIds: 2145997815551559275
   ChildIds: 9519107300857253344
+  ChildIds: 13600978543228362481
+  ChildIds: 16677411980883756519
   ChildIds: 2050642646770484992
   ChildIds: 8521175463724574222
-  ChildIds: 16677411980883756519
-  ChildIds: 13600978543228362481
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -43,71 +43,6 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 13600978543228362481
-  Name: "ActiveBossLevel"
-  Transform {
-    Location {
-      X: -1600
-      Y: 650
-      Z: -1450
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "ActiveBossLevel"
-  }
-}
-Objects {
-  Id: 16677411980883756519
-  Name: "Terrain"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Terrain {
-    Material {
-      Id: 88069042538773205
-    }
-    VoxelSize: 50
-    OctreeDepth: 5
-    GeneratorID: "DEPRECATED"
   }
 }
 Objects {
@@ -170,6 +105,71 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "MainMenuLobby"
+  }
+}
+Objects {
+  Id: 16677411980883756519
+  Name: "Terrain"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Terrain {
+    Material {
+      Id: 88069042538773205
+    }
+    VoxelSize: 50
+    OctreeDepth: 5
+    GeneratorID: "DEPRECATED"
+  }
+}
+Objects {
+  Id: 13600978543228362481
+  Name: "ActiveBossLevel"
+  Transform {
+    Location {
+      X: -1600
+      Y: 650
+      Z: -1450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "ActiveBossLevel"
   }
 }
 Objects {
@@ -1491,11 +1491,14 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -1839.43945
-      Z: 3201.33984
+      X: 42248.2305
+      Y: 613.838318
+      Z: 32312.7656
     }
     Rotation {
-      Yaw: -75
+      Pitch: -0.695953369
+      Yaw: -78.7365417
+      Roll: -0.18649292
     }
     Scale {
       X: 1

@@ -53,6 +53,24 @@ Assets {
   }
 }
 Assets {
+  Id: 4854270377050611262
+  Name: "Pipe"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_001"
+  }
+}
+Assets {
+  Id: 3353962237997435073
+  Name: "Invisible"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
+  }
+}
+Assets {
   Id: 3126396285446757466
   Name: "Opaque Bubble Glass"
   PlatformAssetType: 2

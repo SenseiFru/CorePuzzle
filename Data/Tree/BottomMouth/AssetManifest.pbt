@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9164865307161222902
+  Name: "Jungle Vine (tileable)"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_liana-vine_001_uv"
+  }
+}
+Assets {
   Id: 8711681485105798793
   Name: "Metal Painted 01"
   PlatformAssetType: 2
@@ -26,11 +35,11 @@ Assets {
   }
 }
 Assets {
-  Id: 6138857472117440422
-  Name: "Window Blind Vertical 01"
+  Id: 4498166370641323434
+  Name: "Bark Redwood 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_urb_window_blind_vertical_uv_ref"
+    AssetId: "mi_bark_redwood_001_uv"
   }
 }

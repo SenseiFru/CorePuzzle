@@ -320,6 +320,7 @@ Assets {
           StaticMesh {
             Physics {
             }
+            BoundsScale: 1
           }
         }
       }
@@ -845,5 +846,5 @@ Assets {
       AssetId: "Round_Start_Skydive"
     }
   }
-  SerializationVersion: 81
+  SerializationVersion: 84
 }

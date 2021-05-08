@@ -51,6 +51,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
+            BoundsScale: 1
           }
         }
       }
@@ -73,6 +74,7 @@ Assets {
           }
         }
         ParentId: 1140213355294406705
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -126,5 +128,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 81
+  SerializationVersion: 84
 }

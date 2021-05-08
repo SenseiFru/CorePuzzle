@@ -1,6 +1,38 @@
 Name: "ActiveBossLevel"
 RootId: 13600978543228362481
 Objects {
+  Id: 1971276739033011748
+  Name: "KillScript"
+  Transform {
+    Location {
+      X: 1600
+      Y: -650
+      Z: 1450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13600978543228362481
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "KillScript"
+  }
+}
+Objects {
   Id: 8457343089769416368
   Name: "SpiralPort"
   Transform {

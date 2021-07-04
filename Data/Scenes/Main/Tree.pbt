@@ -25,12 +25,18 @@ Objects {
   ChildIds: 3909389324754720213
   ChildIds: 9054291611968169705
   ChildIds: 5986954837632413354
-  ChildIds: 2145997815551559275
   ChildIds: 9519107300857253344
   ChildIds: 13600978543228362481
   ChildIds: 16677411980883756519
   ChildIds: 2050642646770484992
   ChildIds: 8521175463724574222
+  ChildIds: 521088275859557719
+  ChildIds: 219194021070824183
+  ChildIds: 7150056555969525547
+  ChildIds: 14129987159887155955
+  ChildIds: 7804655677564399756
+  ChildIds: 5335917933022706305
+  ChildIds: 10369230734813325476
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -43,6 +49,421 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 10369230734813325476
+  Name: "MushroomSlow"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 11433468096955672760
+    }
+  }
+}
+Objects {
+  Id: 5335917933022706305
+  Name: "Cube"
+  Transform {
+    Location {
+      X: -1230.49976
+      Y: -2331.79395
+      Z: 3748.0979
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.95872521
+      Y: 3.84892654
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 7804655677564399756
+  Name: "Ball"
+  Transform {
+    Location {
+      X: -1178.48706
+      Y: -2331.79395
+      Z: 3518.25
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1854451897924183625
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 14129987159887155955
+  Name: "MushroomServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 14600708919537658651
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+    Type: Server
+  }
+}
+Objects {
+  Id: 14600708919537658651
+  Name: "MushSpeedScript"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14129987159887155955
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16630346810904070820
+    }
+  }
+}
+Objects {
+  Id: 7150056555969525547
+  Name: "MushHandleClient"
+  Transform {
+    Location {
+      Y: 0.000244140625
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.999999821
+      Y: 0.99999994
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 15495649483789249388
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 15495649483789249388
+  Name: "Stage2MushScript"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7150056555969525547
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:BugBoss"
+      ObjectReference {
+        SelfId: 15123180734836988291
+        SubObjectId: 9643964071654754048
+        InstanceId: 13286145031354608378
+        TemplateId: 3627480809742154146
+      }
+    }
+    Overrides {
+      Name: "cs:MushroomSpawn"
+      AssetReference {
+        Id: 8120865605343432366
+      }
+    }
+    Overrides {
+      Name: "cs:ShroomTrigger"
+      ObjectReference {
+        SelfId: 3915473163232910640
+      }
+    }
+    Overrides {
+      Name: "cs:Explosion"
+      AssetReference {
+        Id: 16310426432685927307
+      }
+    }
+    Overrides {
+      Name: "cs:Cube"
+      ObjectReference {
+        SelfId: 5335917933022706305
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10932454710699715003
+    }
+  }
+}
+Objects {
+  Id: 219194021070824183
+  Name: "Stage2MushSpawn"
+  Transform {
+    Location {
+      Y: 0.000122070313
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.999999881
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:BugBoss"
+      ObjectReference {
+        SelfId: 15123180734836988291
+        SubObjectId: 9643964071654754048
+        InstanceId: 13286145031354608378
+        TemplateId: 3627480809742154146
+      }
+    }
+    Overrides {
+      Name: "cs:MushroomSpawn"
+      AssetReference {
+        Id: 8120865605343432366
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4459527973088820099
+    }
+  }
+}
+Objects {
+  Id: 521088275859557719
+  Name: "MushScriptClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 3915473163232910640
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 3915473163232910640
+  Name: "ShroomTrigger"
+  Transform {
+    Location {
+      X: -2368.60938
+      Y: -1745.90833
+      Z: 3732.67529
+    }
+    Rotation {
+    }
+    Scale {
+      X: 166.31813
+      Y: 220.382156
+      Z: 1
+    }
+  }
+  ParentId: 521088275859557719
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
   }
 }
 Objects {
@@ -382,35 +803,6 @@ Objects {
     ScriptAsset {
       Id: 4884413818907132060
     }
-  }
-}
-Objects {
-  Id: 2145997815551559275
-  Name: "BossSpawning"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "BossSpawning"
   }
 }
 Objects {
@@ -1490,13 +1882,13 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: 958.676636
-      Y: 4424.89941
+      X: 562.444
+      Y: -4745.13281
       Z: 246.157471
     }
     Rotation {
       Pitch: -0.695953369
-      Yaw: -78.7365417
+      Yaw: 126.633766
       Roll: -0.18649292
     }
     Scale {

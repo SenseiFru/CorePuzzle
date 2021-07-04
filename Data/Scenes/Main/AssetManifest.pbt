@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12095835209017042614
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
+  }
+}
+Assets {
   Id: 11515840070784317904
   Name: "Skylight"
   PlatformAssetType: 6
@@ -32,5 +41,14 @@ Assets {
   PrimaryAsset {
     AssetType: "FontAssetRef"
     AssetId: "Baloo2ExtraBold_ref"
+  }
+}
+Assets {
+  Id: 1854451897924183625
+  Name: "Ball"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_001"
   }
 }

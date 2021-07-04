@@ -490,6 +490,6 @@ Assets {
   Marketplace {
     Description: "two mushrooms"
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
   DirectlyPublished: true
 }

@@ -159,5 +159,5 @@ Assets {
       AssetId: "Lerp_Vector3_Smart_Property"
     }
   }
-  SerializationVersion: 84
+  SerializationVersion: 85
 }
